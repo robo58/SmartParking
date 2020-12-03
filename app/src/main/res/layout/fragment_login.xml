@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="?attr/backgroundcolor"
+    >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textColor="?attr/hintcolor"
+            android:textSize="20dp"
+            android:text="@string/Login"
+            android:gravity="center"
+            />
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/etEmail"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/email"
+            android:textColorHint="?attr/hintcolor"
+            android:textColor="?attr/tintcolor"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPassword"
+            android:textColor="?attr/tintcolor"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:textColorHint="?attr/hintcolor"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox"
+            android:textColor="?attr/hintcolor"
+            android:buttonTint="?attr/hintcolor"
+            android:text="@string/show_password" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="10dp"
+            android:background="?attr/prijava"
+            android:text="@string/login"
+            android:textColor="#fff"
+
+
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegister"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:background="?attr/registracija"
+            android:text="@string/register"
+            />
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/googlesign"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

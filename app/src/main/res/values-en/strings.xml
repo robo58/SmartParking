@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartSumParking</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="One">TextView1</string>
+    <string name="Two">TextView2</string>
+    <string name="Three">TextView3</string>
+    <string name="Swipe">Prijeđi udesno</string>
+    <string name="Get">Pokreni</string>
+    <string name="normal_map">Classic</string>
+    <string name="hybrid_map">Hybrid</string>
+
+    <string name="satellite_map">Satellite</string>
+    <string name="terrain_map">Terrain</string>
+
+
+    <string name="night_map">Night</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="res_headline">Reservations</string>
+    <string name="Profil">Profile</string>
+    <string name="Jezik">Language</string>
+    <string name="Odaberi_jezik">Pick language</string>
+    <string name="Njemački">German</string>
+    <string name="Engleski">English</string>
+    <string name="Hrvatski">Croatian</string>
+    <string name="Talijanski">Italian</string>
+    <string name="Japanski">Japanese</string>
+    <string name="Francuski">France</string>
+    <string name="Lociraj">Locate</string>
+    <string name="broj_mjesta">Number of places</string>
+    <string name="radno_vrijeme">Opening hours:</string>
+    <string name="cijena">Price:</string>
+    <string name="_5_km_po_satu">5 KM per hour</string>
+    <string name="available">Availability</string>
+    <string name="mapa">Map</string>
+    <string name="profil">Profile</string>
+    <string name="rezervacija">Reservation</string>
+    <string name="administracija">Administration</string>
+    <string name="postavke">Settings</string>
+    <string name="noc">Night</string>
+    <string name="vi_e">More</string>
+    <string name="retro">Retro</string>
+    <string name="dark">Dark</string>
+    <string name="Natrag">Back</string>
+    <string name="Login">Login</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="show_password">Show password</string>
+    <string name="login">Login</string>
+    <string name="register">Registration</string>
+    <string name="date">Date</string>
+    <string name="pick_date">Pick date</string>
+    <string name="pick_time_from">Pick time from</string>
+    <string name="pick_time_to">Pick time to</string>
+    <string name="time">Time</string>
+    <string name="your_name_here">Your name here</string>
+    <string name="your_email_here">Your email here</string>
+    <string name="submit">Submit</string>
+    <string name="sign_out">Sign out</string>
+    <string name="profile">Profile</string>
+    <string name="pick_date_from">Pick date from</string>
+    <string name="pick_date_to">Pick date to</string>
+    <string name="create_a_reservation">Create a reservation</string>
+    <string name="message_fragment">Message Fragment</string>
+    <string name="o_nama">About us</string>
+    <string name="info">Info</string>
+    <string name="kontakt">Contact</string>
+    <string name="postavi_obavijest">Set Notification</string>
+    <string name="obavijest">Notification</string>
+    <string name="aboutustext">The University of Mostar (lat. Universitas studiorum Mostariensis) is the second largest university in Bosnia and Herzegovina based in Mostar, founded in 1977. The only university is in Croatian outside the Republic of Croatia.</string>
+    <string name="drzava">- The country-</string>
+    <string name="city"> -City-</string>
+    <string name="street">-Street-</string>
+    <string name="contactext">PHONE: 036 310-778\n WEB:sum.ba\n Facebook:@svemo.ba \n Twitter:@SVE_Mostar\n SERVICE \n Legal Services:036/337-081\n General Affairs Service:036/ 446-345\n Finance Service:036/337-079\n  Planning and Analysis Service:036/446-348\n Inter-University Cooperation Office:036/ 446-346</string>
+    <string name="admin_ploča">Admin Panel</string>
+    <string name="upravljanje_korisnicima">Manage users</string>
+    <string name="upravljanje_rezervacijama">Manage Reservations</string>
+    <string name="greške_i_povratne_informacije">Errors and Feedback</string>
+    <string name="Alarmoff">You turned off the alarm</string>
+    <string name="current_reservation">Current reservation</string>
+    <string name="date_from">Date from</string>
+    <string name="date_to">Date to</string>
+    <string name="time_from">Time from</string>
+    <string name="time_to">Time to</string>
+    <string name="parking">Parking</string>
+    <string name="parking_spot">Parking spot</string>
+    <string name="user_managament">User managament</string>
+    <string name="nocni_nacin">Night mode</string>
+</resources>

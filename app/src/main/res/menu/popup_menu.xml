@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <item android:id="@+id/hybrid_map"
+        android:title="@string/hybrid_map"
+        />
+    <item android:id="@+id/satellite_map"
+        android:title="@string/satellite_map"
+        />
+    <item android:id="@+id/terrain_map"
+        android:title="@string/terrain_map"/>
+
+    <item android:id="@+id/Ostalo"
+        android:title="@string/vi_e">
+
+        <menu>
+
+
+
+            <item android:id="@+id/night_map"
+                android:title="@string/noc"
+                />
+            <item android:id="@+id/retro_map"
+                android:title="@string/retro"
+                />
+            <item android:id="@+id/dark_map"
+                android:title="@string/dark"
+                />
+        </menu>
+
+
+    </item>
+
+
+
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartSumParking</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="One">TextView1</string>
+    <string name="Two">TextView2</string>
+    <string name="Three">TextView3</string>
+    <string name="Swipe">右にスワイプ</string>
+    <string name="Get">実行</string>
+    <string name="normal_map">クラシック</string>
+    <string name="hybrid_map">  ハイブリッド</string>
+
+    <string name="satellite_map">衛星</string>
+    <string name="terrain_map">地形</string>
+
+
+    <string name="night_map">ノクチニア</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="res_headline">予約</string>
+    <string name="Profil">プロファイル</string>
+    <string name="Jezik">言語</string>
+    <string name="Odaberi_jezik">言語の選択</string>
+    <string name="Njemački">ドイツ語</string>
+    <string name="Engleski">英語</string>
+    <string name="Hrvatski">クロアチア語</string>
+    <string name="Talijanski">イタリア語</string>
+    <string name="Japanski">日本語</string>
+    <string name="Francuski">フランス</string>
+    <string name="Lociraj">検索</string>
+    <string name="broj_mjesta">座席数</string>
+    <string name="radno_vrijeme">営業時間:</string>
+    <string name="cijena">価格:</string>
+    <string name="_5_km_po_satu">1時間あたり5 KM</string>
+    <string name="available">可用性</string>
+    <string name="mapa">フォルダー</string>
+    <string name="profil">プロファイル</string>
+    <string name="rezervacija">予約</string>
+    <string name="administracija">管理</string>
+    <string name="postavke">設定</string>
+    <string name="noc">夜</string>
+    <string name="vi_e">もっとその</string>
+    <string name="retro">レトロ</string>
+    <string name="dark">暗い</string>
+    <string name="Natrag">戻る</string>
+    <string name="Login">ログイン</string>
+    <string name="email">電子メール</string>
+    <string name="password">パスワード</string>
+    <string name="show_password">パスワードの表示</string>
+    <string name="login">ログイン</string>
+    <string name="register">登録</string>
+    <string name="date">日付</string>
+    <string name="pick_date">ピック日付</string>
+    <string name="pick_time_from">ピックの時間</string>
+    <string name="pick_time_to">時間のピック</string>
+    <string name="time">時間</string>
+    <string name="your_name_here">あなたの名前はこちら</string>
+    <string name="your_email_here">あなたの電子メールはこちら</string>
+    <string name="submit">送信</string>
+    <string name="sign_out">サインアウト</string>
+    <string name="profile">プロファイル</string>
+    <string name="pick_date_from">選択開始日</string>
+    <string name="pick_date_to">次の日付を選択</string>
+    <string name="create_a_reservation">予約の作成</string>
+    <string name="message_fragment">Message Fragment</string>
+    <string name="o_nama">我々について</string>
+    <string name="info">情報</string>
+    <string name="kontakt">連絡先</string>
+    <string name="postavi_obavijest">通知の設定</string>
+    <string name="obavijest">通知</string>
+    <string name="aboutustext">モスタル大学 (大学スタジオラムモスタリア) は、ボスニア・ヘルツェゴビナで2番目に大きい大学です。唯一の大学はクロアチア共和国の外のクロアチア語です.</string>
+    <string name="drzava">-国家-</string>
+    <string name="city">-街-</string>
+    <string name="street">-通り-</string>
+    <string name="contactext">電話: 036 310-778\n WEB:sum.ba\n Facebook:@svemo.ba \n Twitter:@SVE_Mostar\n サービス \n 法務サービス:036/337-081\n 総務サービス:036/ 446-345\n 財務省:036/337-079\n 計画・分析サービス:036/446-348\n 大学間協力室:036/ 446-346</string>
+    <string name="admin_ploča">管理パネル</string>
+    <string name="upravljanje_korisnicima">ユーザーの管理</string>
+    <string name="upravljanje_rezervacijama">予約の管理</string>
+    <string name="greške_i_povratne_informacije">エラーとフィードバック</string>
+    <string name="Alarmoff">アラームをオフにしました</string>
+    <string name="current_reservation">現在の予約</string>
+    <string name="date_from">開始日</string>
+    <string name="date_to">終了日</string>
+    <string name="time_from">から時間</string>
+    <string name="time_to">時間</string>
+    <string name="parking">駐車 場</string>
+    <string name="parking_spot"> 駐車場</string>
+    <string name="user_managament">ユーザー・マナガマン</string>
+    <string name="nocni_nacin">ナイトモード</string>
+</resources>

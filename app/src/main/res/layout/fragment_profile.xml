@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    >
+
+    <Button
+        android:id="@+id/profile_signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259" />
+
+    <TextView
+        android:id="@+id/profile_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/profile"
+        android:textSize="50sp"
+        android:textColor="?attr/hintcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/current_reservation"
+        android:textColor="?attr/hintcolor"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/pres_lay"
+        app:layout_constraintEnd_toEndOf="@+id/pres_lay"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/pres_lay"
+        app:layout_constraintTop_toBottomOf="@+id/profile_email" />
+
+    <TextView
+        android:id="@+id/pres_lay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="No current reservation"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_res" />
+
+    <RelativeLayout
+        android:id="@+id/pres_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/profile_signout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89">
+
+    <TextView
+        android:id="@+id/pres_datefrom"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/date_from"
+        android:textColor="?attr/hintcolor"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:id="@+id/pres_datefromval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/pres_datefrom"
+        android:text="datefromval"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/pres_date2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pres_datefrom"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/date_to"
+        android:textColor="?attr/hintcolor"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:id="@+id/pres_date2val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pres_datefromval"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/pres_date2"
+        android:text="date2val"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/pres_timefrom"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pres_date2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/time_from"
+        android:textColor="?attr/hintcolor"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:id="@+id/pres_timefromval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pres_date2val"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/pres_timefrom"
+        android:text="timefromval"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/pres_time2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pres_timefrom"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/time_to"
+        android:textColor="?attr/hintcolor"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:id="@+id/pres_time2val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pres_timefromval"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/pres_time2"
+        android:text="time2val"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/pres_parkname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pres_time2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/parking"
+        android:textColor="?attr/hintcolor"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:id="@+id/pres_parkval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pres_time2val"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/pres_date2"
+        android:text="parkval"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/pres_parkspot"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pres_parkname"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/parking_spot"
+        android:textColor="?attr/hintcolor"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:id="@+id/pres_parkspotval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pres_parkval"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/pres_date2"
+        android:text="parkspotval"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

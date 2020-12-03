@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GmapActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/map_frame"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:uiCompass="true" />
+
+        <Button
+            android:id="@+id/findLocationbtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="72dp"
+            android:background="@drawable/blue_border"
+            android:text="@string/Lociraj"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.951"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="84dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/map" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/map"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/info_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/info_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="20/60"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.164"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.79" />
+
+            <TextView
+                android:id="@+id/info_counter_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info_counter"
+                android:text="@string/broj_mjesta"
+                app:layout_constraintBottom_toTopOf="@+id/info_counter"
+                app:layout_constraintEnd_toEndOf="@+id/info_counter"
+                app:layout_constraintStart_toStartOf="@+id/info_counter" />
+
+            <TextView
+                android:id="@+id/info_workhours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/info_counter_txt"
+                android:text="@string/radno_vrijeme"
+                app:layout_constraintBottom_toTopOf="@+id/info_workhours_count"
+                app:layout_constraintEnd_toEndOf="@+id/info_workhours_count"
+                app:layout_constraintStart_toStartOf="@+id/info_workhours_count"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/info_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_workhours"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="59dp"
+                android:layout_marginLeft="59dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginRight="64dp"
+                android:layout_toRightOf="@+id/info_counter_txt"
+                android:text="@string/cijena"
+                app:layout_constraintBottom_toTopOf="@+id/info_price_count"
+                app:layout_constraintEnd_toEndOf="@+id/info_price_count"
+                app:layout_constraintStart_toStartOf="@+id/info_price_count" />
+
+            <TextView
+                android:id="@+id/info_workhours_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="104dp"
+
+                android:layout_toRightOf="@+id/info_counter_txt"
+                android:text="7:00 - 23:00"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.878"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/info_price_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_workhours_count"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/info_counter_txt"
+                android:text="@string/_5_km_po_satu"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.91"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/info_workhours_count"
+                app:layout_constraintVertical_bias="0.507" />
+
+            <ImageView
+                android:id="@+id/info_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_circlegreen"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.172"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.388" />
+
+            <TextView
+                android:id="@+id/info_icon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/available"
+                app:layout_constraintBottom_toTopOf="@+id/info_icon"
+                app:layout_constraintEnd_toEndOf="@+id/info_icon"
+                app:layout_constraintHorizontal_bias="0.413"
+                app:layout_constraintStart_toStartOf="@+id/info_icon" />
+
+            <ImageView
+                android:id="@+id/ic_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_close_black_24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:onClick="showPopup"
+            android:src="@drawable/ic_icon5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/parking_list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_border"
+            android:gravity="center_horizontal"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            app:elevation="0dp"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:menu="@menu/bottom_menu" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

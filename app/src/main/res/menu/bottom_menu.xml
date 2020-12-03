@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/menu_map"
+        android:title="@string/mapa"
+        android:icon="@drawable/ic_map_black_24dp"/>
+    <item
+        android:id="@+id/menu_user"
+        android:title="@string/profil"
+        android:icon="@drawable/ic_person_black_24dp"/>
+    <item
+        android:id="@+id/menu_reservations"
+        android:title="@string/rezervacija"
+        android:icon="@drawable/ic_create_black_24dp"/>
+    <item
+        android:id="@+id/menu_settings"
+        android:title="@string/postavke"
+        android:icon="@drawable/ic_settings_black_24dp"/>
+    <item
+        android:id="@+id/menu_adminUI"
+        android:title="@string/administracija"
+        android:icon="@drawable/ic_administration"/>
+
+</menu>

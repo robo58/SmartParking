@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">SmartSumParking</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="One">TextView1</string>
+    <string name="Two">TextView2</string>
+    <string name="Three">TextView3</string>
+    <string name="Swipe">Prijeđite udesno</string>
+    <string name="Get">Pokreni</string>
+    <string name="normal_map">Klasična</string>
+    <string name="hybrid_map">Hibrid</string>
+
+    <string name="satellite_map">Satelit</string>
+    <string name="terrain_map">Teren</string>
+
+
+    <string name="night_map">Noćna</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="res_headline">Rezervacije</string>
+    <string name="Profil">Profil</string>
+    <string name="Jezik">Jezik</string>
+    <string name="Odaberi_jezik">Odaberi jezik</string>
+    <string name="Njemački">Njemački</string>
+    <string name="Engleski">Engleski</string>
+    <string name="Hrvatski">Hrvatski</string>
+    <string name="Talijanski">Talijanski</string>
+    <string name="Japanski">Japanski</string>
+    <string name="Francuski">Francuski</string>
+    <string name="Lociraj">Lociraj</string>
+    <string name="broj_mjesta">Broj mjesta</string>
+    <string name="radno_vrijeme">Radno vrijeme:</string>
+    <string name="cijena">Cijena:</string>
+    <string name="_5_km_po_satu">5 KM po satu</string>
+    <string name="available">Dostupnost</string>
+    <string name="mapa">Mapa</string>
+    <string name="profil">Profil</string>
+    <string name="rezervacija">Rezervacija</string>
+    <string name="administracija">Administracija</string>
+    <string name="postavke">Postavke</string>
+    <string name="noc">Noć</string>
+    <string name="vi_e">Više</string>
+    <string name="retro">Retro</string>
+    <string name="dark">Dark</string>
+    <string name="Natrag">Natrag</string>
+    <string name="Login">Prijava</string>
+    <string name="email">E-mail</string>
+    <string name="password">Lozinka</string>
+    <string name="show_password">Prikaži lozinku</string>
+    <string name="login">Prijava</string>
+    <string name="register">Registracija</string>
+
+    <string name="date">Datum</string>
+    <string name="pick_date">Izaberi datum</string>
+    <string name="time">Vrijeme</string>
+    <string name="your_name_here">Vaše ime ovdje</string>
+    <string name="your_email_here">Vaš email ovdje</string>
+    <string name="admin_ploča">Admin Ploča</string>
+    <string name="upravljanje_korisnicima">Upravljanje korisnicima</string>
+    <string name="upravljanje_rezervacijama">Upravljanje rezervacijama</string>
+    <string name="greške_i_povratne_informacije">Greške i povratne informacije</string>
+    <string name="sign_out">Odjavite se</string>
+    <string name="profile">Profil</string>
+    <string name="pick_date_from">Izaberi datum od</string>
+    <string name="pick_date_to">Izaberi datum do</string>
+    <string name="pick_time_from">Izaberi vrijeme od</string>
+    <string name="pick_time_to">Izaberi vrijeme do</string>
+    <string name="submit">Priloži</string>
+    <string name="create_a_reservation">Napravi rezervaciju </string>
+    <string name="message_fragment">Fragment poruke</string>
+    <string name="o_nama">O nama</string>
+    <string name="info">Info</string>
+    <string name="kontakt">Kontakt</string>
+    <string name="postavi_obavijest">Postavi obavijest</string>
+    <string name="obavijest">Obavijest</string>
+    <string name="aboutustext">Sveučilište u Mostaru (lat. Universitas studiorum Mostariensis) je drugo najveće sveučilište u Bosni i Hercegovini sa sjedištem u Mostaru, osnovano 1977. Jedino je sveučilište na hrvatskom jeziku izvan Republike Hrvatske.</string>
+    <string name="drzava">-Država-</string>
+    <string name="city">-Grad-</string>
+    <string name="street">-Ulica-</string>
+    <string name="contactext"> TELEFON: 036 310-778\n WEB:sum.ba\n Facebook:@svemo.ba \n Twitter:@SVE_Mostar\n SLUŽBE \n Služba za pravne poslove:036/337-081\n Služba za opće poslove:036/ 446-345\n Služba za financije:036/337-079\n Služba za planiranje i analizu:036/446-348\n Ured za međusveučilišnu suradnju:036/ 446-346</string>
+    <string name="Alarmoff">Isključili ste alarm</string>
+    <string name="current_reservation">Trenutna rezervacija</string>
+    <string name="date_from">Datum od</string>
+    <string name="date_to">Datum do</string>
+    <string name="time_from">Vrijeme od</string>
+    <string name="time_to">Vrijeme do</string>
+    <string name="parking">Parking</string>
+    <string name="parking_spot">Parkirno mjesto</string>
+    <string name="user_managament">Korisnički managament</string>
+    <string name="nocni_nacin">Noćni način</string>
+
+</resources>

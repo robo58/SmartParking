@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorText">#ffffff</color>
+    <color name="green">#4CAF50</color>
+    <color name="register">#232323</color>
+    <color name="white">#FFF</color>
+    <color name="orange">#eaad43</color>
+    <color name="bluelight">#49acd5</color>
+    <color name="aboutusbackground">#272727</color>
+    <color name="tipscolor">#259B9A</color>
+    <color name="tipscolor2">#FFCF43</color>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartSumParking</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="One">TextView1</string>
+    <string name="Two">TextView2</string>
+    <string name="Three">TextView3</string>
+    <string name="Swipe">Glisser vers la droite</string>
+    <string name="Get">Courir</string>
+    <string name="normal_map">Classique</string>
+    <string name="hybrid_map">Hybride</string>
+
+    <string name="satellite_map">Satellite</string>
+    <string name="terrain_map">Terrain</string>
+
+
+    <string name="night_map">Nocturnia</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="res_headline">Réservations</string>
+    <string name="Profil">Profil</string>
+    <string name="Jezik">Langue</string>
+    <string name="Odaberi_jezik">Sélectionner une langue</string>
+    <string name="Njemački">Allemand</string>
+    <string name="Engleski">Anglais</string>
+    <string name="Hrvatski">Croate</string>
+    <string name="Talijanski">Italien</string>
+    <string name="Japanski">Japonais</string>
+    <string name="Francuski">France</string>
+    <string name="Lociraj">Localiser</string>
+    <string name="broj_mjesta">Nombre de sièges</string>
+    <string name="radno_vrijeme">Heures d’ouverture:</string>
+    <string name="cijena">Prix:</string>
+    <string name="_5_km_po_satu">5 KM par heure</string>
+    <string name="available">Disponibilité</string>
+    <string name="mapa">Dossier</string>
+    <string name="profil">Profil</string>
+    <string name="rezervacija">Réservation</string>
+    <string name="administracija">Administration</string>
+    <string name="postavke">Paramètres</string>
+    <string name="noc">Nuit</string>
+    <string name="vi_e">Plus</string>
+    <string name="retro">Rétro</string>
+    <string name="dark">Sombre</string>
+    <string name="Natrag">Précédent</string>
+    <string name="Login">Connectez-vous</string>
+    <string name="email">E-mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="show_password">Afficher le mot de passe</string>
+    <string name="login">Connectez-vous</string>
+    <string name="register">Registre</string>
+    <string name="date">Date</string>
+    <string name="pick_date">Date de choix</string>
+    <string name="pick_time_from">Choisissez l’heure de</string>
+    <string name="pick_time_to">Choisissez le temps de</string>
+    <string name="time">Temps</string>
+    <string name="your_name_here">Votre nom ici</string>
+    <string name="your_email_here">Votre e-mail ici</string>
+    <string name="submit">Envoyer</string>
+    <string name="sign_out">Signez</string>
+    <string name="profile">Profil</string>
+    <string name="pick_date_from">Date de choix à partir de</string>
+    <string name="pick_date_to">Date de choix pour</string>
+    <string name="create_a_reservation">Créer une réservation</string>
+    <string name="message_fragment">Message Fragment</string>
+    <string name="o_nama">Qui sommes-nous</string>
+    <string name="info">Info</string>
+    <string name="kontakt">Contact</string>
+    <string name="postavi_obavijest">Définir la notification</string>
+    <string name="obavijest">Notification</string>
+    <string name="aboutustext">L’Université de Mostar (lat. Universitas studiorum Mostariensis) est la deuxième plus grande université de Bosnie-Herzégovine basée à Mostar, fondée en 1977. La seule université est en croate en dehors de la République de Croatie.</string>
+    <string name="drzava">-L’Etat-</string>
+    <string name="city">-La ville-</string>
+    <string name="street">-La rue-</string>
+    <string name="contactext">Téléphone: 036 310-778\n WEB:sum.ba\n Facebook:@svemo.ba \n Twitter:@SVE_Mostar\n SERVICE \n Service juridiques:036/337-081\n  Service des affaires générales:036/446-345\n Finances service:036/337-079\n Service de planification et d’analyse:036/446-348\n Bureau de coopération interuniversitaire:036/446-346</string>
+    <string name="admin_ploča">Panneau d’administration</string>
+    <string name="upravljanje_korisnicima">Gérer les utilisateurs</string>
+    <string name="upravljanje_rezervacijama">Gérer les réservations</string>
+    <string name="greške_i_povratne_informacije">Erreurs et commentaires</string>
+    <string name="Alarmoff">Vous avez éteint lalarme</string>
+    <string name="current_reservation">Réservation actuelle</string>
+    <string name="date_from">Date à partir de</string>
+    <string name="date_to">Date à</string>
+    <string name="time_from">Temps de</string>
+    <string name="time_to">temps to</string>
+    <string name="parking">Parking</string>
+    <string name="parking_spot">Parking</string>
+    <string name="user_managament">Managament utilisateur</string>
+    <string name="nocni_nacin">Mode nuit</string>
+</resources>
