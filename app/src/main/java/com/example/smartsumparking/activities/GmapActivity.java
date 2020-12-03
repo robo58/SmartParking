@@ -161,57 +161,40 @@ public class GmapActivity extends FragmentActivity implements OnRequestPermissio
     List<String> reservedSpaces;
     FirebaseFirestore db;
     String pSlobodno;
-//    public Emitter.Listener pChange = new Emitter.Listener() {
-//        @Override
-//        public void call(final Object... args) {
-//            runOnUiThread(new Runnable() {
-//                @Override
-//                public void run() {
-//                    JSONObject data = (JSONObject) args[0];
-//                    try {
-//                        System.out.println("promjena kod mjesta "+ data.getString("parking_space_name"));
-//                        if(reservedSpaces.contains(data.getString("parking_space_name"))){
-//                            sumParkings[data.getInt("id_parking_space") - 1].setTitle(data.getString("parking_space_name"));
-//                            sumParkings[data.getInt("id_parking_space") - 1].setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW));
-//                            sumParkings[data.getInt("id_parking_space") - 1].setSnippet("Reserved");
-//                            availableParkings.remove(sumParkings[data.getInt("id_parking_space") - 1]);
-//                        }else {
-//                            if (data.getInt("occupied") == 1) {
-//                                pSlobodno = "" + data.getInt("normal_available") + "/" + (data.getInt("normal_available") + data.getInt("normal_occupied"));
-//                                availableSpaces=pSlobodno;
-//                                info_counter.setText(pSlobodno);
-//                                sumParkings[data.getInt("id_parking_space") - 1].setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
-//                                sumParkings[data.getInt("id_parking_space") - 1].setSnippet("");
-//                                availableParkings.remove(sumParkings[data.getInt("id_parking_space") - 1]);
-//                            } else {
-//                                pSlobodno = "" + data.getInt("normal_available") + "/" + (data.getInt("normal_available") + data.getInt("normal_occupied"));
-//                                info_counter.setText(pSlobodno);
-//                                availableSpaces=pSlobodno;
-//                                sumParkings[data.getInt("id_parking_space") - 1].setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
-//                                sumParkings[data.getInt("id_parking_space") - 1].setSnippet("Hold to create reservation");
-//                                availableParkings.add(sumParkings[data.getInt("id_parking_space") - 1]);
-//                                map.setOnInfoWindowLongClickListener(new GoogleMap.OnInfoWindowLongClickListener() {
-//                                    @Override
-//                                    public void onInfoWindowLongClick(Marker marker) {
-//                                        if (availableParkings.contains(marker)) {
-//                                            String rspotName = marker.getTitle();
-//                                            String rparkingName = parkings[0].getTitle();
-//                                            System.out.println(rparkingName);
-//                                            getSupportFragmentManager().beginTransaction().replace(R.id.frame_container, new ReservationsFragment(parkings, park, rparkingName, rspotName)).commit();
-//                                            map_frame.setVisibility(View.GONE);
-//                                            frame_container.setVisibility(View.VISIBLE);
-//                                        }
-//                                    }
-//                                });
-//                            }
-//                        }
-//                    } catch (JSONException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//            });
-//        }
-//    };
+    public Emitter.Listener pChange = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    JSONObject data = (JSONObject) args[0];
+                    try {
+                        System.out.println("promjena kod mjesta "+ data.getString("parking_space_name"));
+                        for(Parking parking : parkings){
+                            if(parking.getId() == data.getInt("parking_id")){
+                                    for(ParkingSpace space : parking.getParkingSpaces()){
+                                        if(space.getName().equals(data.getString("parking_space_name"))){
+                                            if (data.getInt("occupied") == 1) {
+                                                space.getParkingSpaceMarker().setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
+                                                parking.setOccupied(parking.getOccupied()+1);
+                                            } else {
+                                                space.getParkingSpaceMarker().setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
+                                                parking.setOccupied(parking.getOccupied()-1);
+                                            }
+                                        }
+                                    }
+                            }
+                            info_counter.setText((parking.getCapacity() - parking.getOccupied()) + "/" + parking.getCapacity());
+
+                        }
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+        }
+    };
 
 
     private String getUrl(LatLng origin, LatLng dest, String directionMode) {
@@ -307,7 +290,7 @@ public class GmapActivity extends FragmentActivity implements OnRequestPermissio
         });
         rq = Volley.newRequestQueue(this);
         try {
-            mSocket = IO.socket("http://smart.sum.ba/parking-events");
+            mSocket = IO.socket("https://demo.smart.sum.ba/parking-events");
             mSocket.connect();
         } catch (URISyntaxException e) {
             e.printStackTrace();
@@ -439,7 +422,7 @@ public class GmapActivity extends FragmentActivity implements OnRequestPermissio
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, FINE_LOCATION_PERMISSION_REQUEST);
         }
         sendRequest();
-//        mSocket.on("parking-lot-state-change", pChange);
+        mSocket.on("parking-lot-state-change", pChange);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
